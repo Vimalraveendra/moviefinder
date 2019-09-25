@@ -1,26 +1,48 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
 import './App.css';
+import Title from './Title';
+import MovieList from './MovieList';
 
-function App() {
-  return (
+const API_KEY =process.env.REACT_APP_API_KEY;
+
+class App extends Component{
+  state={
+    input:'',
+    movies:[]
+  }
+
+  onHandleChange = (event)=>{
+    this.setState({input:event.target.value})
+  }
+  
+  onHandleSubmit = ()=>{
+    const {input} = this.state
+    fetch(`http://www.omdbapi.com/?s=${input}&apikey=${API_KEY}`)
+    .then(response=> response.json())
+    .then(data=>this.setState({
+       movies:data.Search
+    }))
+    .catch(err=>(err))
+  }
+  render(){
+    return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       MovieFinder
       </header>
+      <Title
+      input={this.state.input} 
+      onHandleChange={this.onHandleChange}
+      onHandleSubmit={this.onHandleSubmit}
+      />
+      <MovieList
+      moviesArray={this.state.movies}
+       />
+      
     </div>
   );
+  }
+  
 }
 
 export default App;
