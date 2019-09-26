@@ -7,3 +7,5 @@ React to run the project.
 3.Run npm install.
 
 4.Run npm start.
+
+5.REACT_APP_API_KEY=YOUR_API_KEY_HERE
