@@ -17,39 +17,35 @@ class App extends Component{
   }
   
   onHandleSubmit = ()=>{
-    const {input} = this.state
-    if(input.length > 0){
-    fetch(`http://www.omdbapi.com/?s=${input}&apikey=${API_KEY}`)
-    .then(response=> response.json())
-    .then(data=>this.setState({
-       movies:data.Search
-    }))
-    .catch(err=>(err))
-    this.setState({input:''})
-    
-  }else{
-     this.setState({error:"Sorry!!!, Please enter a film name"})
-  }
-  }
+        const {input} = this.state
+        fetch(`http://www.omdbapi.com/?s=${input}&apikey=${API_KEY}`)
+        .then(response=> response.json())
+        .then(data=>this.setState({
+           movies:data.Search
+        }))
+        .catch(err=>(err))
+      }
+
+
   render(){
-    return (
-    <div className="App">
-      <header className="App-header">
-       MovieFinder
-      </header>
-      <Title
-      input={this.state.input} 
-      onHandleChange={this.onHandleChange}
-      onHandleSubmit={this.onHandleSubmit}
-      />
-      <MovieList
-      moviesArray={this.state.movies}
-       />
+        return (
+        <div className="App">
+          <header className="App-header">
+           MovieFinder
+          </header>
+          <Title
+          input={this.state.input} 
+          onHandleChange={this.onHandleChange}
+          onHandleSubmit={this.onHandleSubmit}
+          />
+          <MovieList
+          moviesArray={this.state.movies}
+           />
+          
+        </div>
+      );
+      }
       
-    </div>
-  );
-  }
-  
-}
+    }
 
 export default App;
