@@ -5,12 +5,13 @@ const Title = ({onHandleChange,input,onHandleSubmit}) =>{
 		<React.Fragment>
 		 <div>
 		 <input 
+		 className='f4 pa2 ma4'
 		 type="text"
 		 value={input}
          onChange={onHandleChange}
 		 />
 		 <button
-		 className='f4'
+		 className='f4 pv2 ph3 grow bg-dark-green white link'
 		 onClick={onHandleSubmit}
 		 >
 		 Click
