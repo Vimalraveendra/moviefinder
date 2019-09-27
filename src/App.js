@@ -24,6 +24,7 @@ class App extends Component{
            movies:data.Search
         }))
         .catch(err=>(err))
+        this.setState({input:''}) 
       }
 
 
