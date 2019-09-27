@@ -18,16 +18,21 @@ class App extends Component{
   
   onHandleSubmit = ()=>{
         const {input} = this.state
+        if(input.length > 0){
         fetch(`http://www.omdbapi.com/?s=${input}&apikey=${API_KEY}`)
         .then(response=> response.json())
         .then(data=>this.setState({
            movies:data.Search
         }))
         .catch(err=>(err))
-        this.setState({input:''}) 
+        this.setState({input:''})
+        
+      }else{
+         this.setState({error:"Sorry!!!, Please enter a film name"})
+      }
       }
 
-
+      
   render(){
         return (
         <div className="App">
