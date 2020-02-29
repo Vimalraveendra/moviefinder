@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
-import Title from "./components/title/Title";
-import MovieList from "./components/movie-list/MovieList";
+import Title from "../components/title/Title";
+import MovieList from "../components/movie-list/MovieList";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
 
