@@ -7,6 +7,7 @@ const Title = ({ onHandleChange, input, onHandleSubmit }) => {
         <input
           className="f4 pa2 ma4"
           type="text"
+          placeholder="Search Movie here"
           value={input}
           onChange={onHandleChange}
         />
