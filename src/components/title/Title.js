@@ -3,9 +3,9 @@ import "./Title.css";
 const Title = ({ onHandleChange, input, onHandleSubmit }) => {
   return (
     <React.Fragment>
-      <div>
+      <div className="box">
         <input
-          className="f4 pa2 ma4"
+          className="f4 pa2 ma3"
           type="text"
           placeholder="Search Movie here"
           value={input}

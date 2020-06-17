@@ -1,3 +1,28 @@
+.box {
+  display: block;
+  text-align: center;
+}
+
+input {
+  text-transform: capitalize;
+}
 input:focus {
   outline: none;
+}
+
+@media (max-width: 500px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  input {
+    width: 70vw;
+    align-items: center;
+    margin-top: 5px;
+  }
+  button {
+    width: 70vw;
+  }
 }
