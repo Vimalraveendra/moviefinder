@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/moviefinder/static/css/main.970e9135.chunk.css",
-    "main.js": "/moviefinder/static/js/main.418d97ca.chunk.js",
-    "main.js.map": "/moviefinder/static/js/main.418d97ca.chunk.js.map",
+    "main.js": "/moviefinder/static/js/main.8af1447d.chunk.js",
+    "main.js.map": "/moviefinder/static/js/main.8af1447d.chunk.js.map",
     "runtime-main.js": "/moviefinder/static/js/runtime-main.02090348.js",
     "runtime-main.js.map": "/moviefinder/static/js/runtime-main.02090348.js.map",
     "static/css/2.036b41f9.chunk.css": "/moviefinder/static/css/2.036b41f9.chunk.css",
     "static/js/2.1c1f0103.chunk.js": "/moviefinder/static/js/2.1c1f0103.chunk.js",
     "static/js/2.1c1f0103.chunk.js.map": "/moviefinder/static/js/2.1c1f0103.chunk.js.map",
     "index.html": "/moviefinder/index.html",
-    "precache-manifest.c0443d05403c034e198a32713bdb3ce2.js": "/moviefinder/precache-manifest.c0443d05403c034e198a32713bdb3ce2.js",
+    "precache-manifest.d6a56083bb8f23268f18bfe3ca83b147.js": "/moviefinder/precache-manifest.d6a56083bb8f23268f18bfe3ca83b147.js",
     "service-worker.js": "/moviefinder/service-worker.js",
     "static/css/2.036b41f9.chunk.css.map": "/moviefinder/static/css/2.036b41f9.chunk.css.map",
     "static/css/main.970e9135.chunk.css.map": "/moviefinder/static/css/main.970e9135.chunk.css.map"
