@@ -5,6 +5,7 @@ const Title = ({ onHandleChange, input, onHandleSubmit }) => {
     <React.Fragment>
       <div className="box">
         <input
+          aria-label="Searching movies"
           className="f4 pa2 ma3"
           type="text"
           placeholder="Search Movie here"
@@ -12,7 +13,7 @@ const Title = ({ onHandleChange, input, onHandleSubmit }) => {
           onChange={onHandleChange}
         />
         <button
-          className="f4 pv2 ph3 grow bg-dark-green white link"
+          className="f4 pv2 ph3  bg-dark-green white link"
           onClick={onHandleSubmit}
         >
           Click
